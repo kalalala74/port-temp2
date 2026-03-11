@@ -3,130 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name - Film Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+    <!-- Film Grain Overlay -->
+    <div class="film-grain"></div>
+    
+    <!-- Film Strip Borders -->
+    <div class="film-strip film-strip-left"></div>
+    <div class="film-strip film-strip-right"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <h1 class="logo">
-                <span class="glitch" data-text="YOUR NAME">YOUR NAME</span>
+                <span class="clapperboard">🎬</span> YOUR NAME
             </h1>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">REEL</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Film Reel Landing -->
     <section id="home" class="hero">
-        <div class="scanline"></div>
-        <div class="container">
-            <h1 class="hero-title">Hi, I'm <span class="highlight glitch-text">Your Name</span></h1>
-            <p class="hero-subtitle">
-                <span class="typing-text">Web Developer | Designer | Creator</span>
-            </p>
-            <p class="hero-description">I build awesome things for the web</p>
-            <a href="#projects" class="btn neon-btn">
-                <span>View My Work</span>
-                <span class="btn-glow"></span>
-            </a>
+        <div class="film-reel-container">
+            <!-- Film Reel Sprockets -->
+            <div class="sprockets sprockets-top"></div>
+            <div class="sprockets sprockets-bottom"></div>
+            
+            <div class="container">
+                <div class="clapperboard-title">
+                    <div class="clapper-top">
+                        <div class="clapper-stripes"></div>
+                    </div>
+                    <div class="clapper-board">
+                        <div class="clapper-info">
+                            <span class="clapper-label">DIRECTOR:</span>
+                            <span class="clapper-value">YOUR NAME</span>
+                        </div>
+                        <div class="clapper-info">
+                            <span class="clapper-label">SCENE:</span>
+                            <span class="clapper-value">PORTFOLIO</span>
+                        </div>
+                        <div class="clapper-info">
+                            <span class="clapper-label">TAKE:</span>
+                            <span class="clapper-value">001</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="film-text">FILMMAKER</span>
+                    <span class="film-text-outline">& STORYTELLER</span>
+                </h1>
+                
+                <p class="hero-subtitle">Bringing Stories to Life, One Frame at a Time</p>
+                
+                <a href="#projects" class="btn film-btn">
+                    <span>▶ VIEW REEL</span>
+                </a>
+            </div>
+            
+            <!-- Film Frame Counter -->
+            <div class="frame-counter">
+                <span class="counter-label">FRAME:</span>
+                <span class="counter-number" id="frameCount">00001</span>
+            </div>
         </div>
-        <div class="hero-grid"></div>
+        
+        <!-- Animated Film Reel -->
+        <div class="film-reel-animation">
+            <div class="reel reel-left"></div>
+            <div class="reel reel-right"></div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - Film Frames -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">
-                <span class="neon-text" data-text="MY PROJECTS">MY PROJECTS</span>
+                <span class="film-strip-title">FEATURED WORKS</span>
             </h2>
-            <div class="projects-grid">
+            
+            <div class="film-strip-grid">
                 
-                <!-- Project Card 1 -->
-                <div class="project-card" data-aos="fade-up">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/0a0a0a/BB86FC?text=Project+1" alt="Project 1">
-                        <div class="project-overlay">
-                            <div class="overlay-border"></div>
+                <!-- Film Frame 1 -->
+                <div class="film-frame" data-film="fade-in">
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                    </div>
+                    
+                    <div class="frame-content">
+                        <div class="frame-image">
+                            <img src="https://via.placeholder.com/600x400/1a1a1a/ffd700?text=SHORT+FILM" alt="Project 1">
+                            <div class="play-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
+                        </div>
+                        <div class="frame-info">
+                            <h3>The Last Frame</h3>
+                            <p class="film-type">SHORT FILM • 2024</p>
+                            <p class="film-description">A poignant exploration of memory and time through cinematic storytelling.</p>
+                            <div class="film-specs">
+                                <span class="spec">4K</span>
+                                <span class="spec">15 MIN</span>
+                                <span class="spec">DRAMA</span>
+                            </div>
+                            <div class="frame-links">
+                                <a href="#" class="film-link">WATCH</a>
+                                <a href="#" class="film-link">DETAILS</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Cyber Project Alpha</h3>
-                        <p>A futuristic web application with cutting-edge technology.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="project1.html" class="btn-small">
-                                <span>View Details</span>
-                            </a>
-                            <a href="#" class="btn-small btn-secondary">
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 2 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/0a0a0a/BB86FC?text=Project+2" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="overlay-border"></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Neon Dashboard</h3>
-                        <p>Interactive dashboard with real-time data visualization.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="project2.html" class="btn-small">
-                                <span>View Details</span>
-                            </a>
-                            <a href="#" class="btn-small btn-secondary">
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
+                    
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/0a0a0a/BB86FC?text=Project+3" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="overlay-border"></div>
+                <!-- Film Frame 2 -->
+                <div class="film-frame" data-film="fade-in">
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                    </div>
+                    
+                    <div class="frame-content">
+                        <div class="frame-image">
+                            <img src="https://via.placeholder.com/600x400/1a1a1a/DC143C?text=DOCUMENTARY" alt="Project 2">
+                            <div class="play-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
+                        </div>
+                        <div class="frame-info">
+                            <h3>Urban Echoes</h3>
+                            <p class="film-type">DOCUMENTARY • 2024</p>
+                            <p class="film-description">Capturing the untold stories of city life through intimate portraits.</p>
+                            <div class="film-specs">
+                                <span class="spec">4K</span>
+                                <span class="spec">45 MIN</span>
+                                <span class="spec">DOCUMENTARY</span>
+                            </div>
+                            <div class="frame-links">
+                                <a href="#" class="film-link">WATCH</a>
+                                <a href="#" class="film-link">DETAILS</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Quantum Interface</h3>
-                        <p>Next-gen user interface with smooth animations.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Three.js</span>
-                            <span class="tech-tag">WebGL</span>
+                    
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                    </div>
+                </div>
+
+                <!-- Film Frame 3 -->
+                <div class="film-frame" data-film="fade-in">
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                    </div>
+                    
+                    <div class="frame-content">
+                        <div class="frame-image">
+                            <img src="https://via.placeholder.com/600x400/1a1a1a/DC143C?text=MUSIC+VIDEO" alt="Project 3">
+                            <div class="play-overlay">
+                                <div class="play-button">▶</div>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="project3.html" class="btn-small">
-                                <span>View Details</span>
-                            </a>
-                            <a href="#" class="btn-small btn-secondary">
-                                <span>Live Demo</span>
-                            </a>
+                        <div class="frame-info">
+                            <h3>Neon Nights</h3>
+                            <p class="film-type">MUSIC VIDEO • 2023</p>
+                            <p class="film-description">A visual journey through sound, color, and movement.</p>
+                            <div class="film-specs">
+                                <span class="spec">4K</span>
+                                <span class="spec">4 MIN</span>
+                                <span class="spec">MUSIC</span>
+                            </div>
+                            <div class="frame-links">
+                                <a href="#" class="film-link">WATCH</a>
+                                <a href="#" class="film-link">DETAILS</a>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="frame-sprockets">
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
+                        <div class="sprocket-hole"></div>
                     </div>
                 </div>
 
@@ -138,18 +219,27 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">
-                <span class="neon-text" data-text="GET IN TOUCH">GET IN TOUCH</span>
+                <span class="film-strip-title">LET'S COLLABORATE</span>
             </h2>
-            <p>Feel free to reach out for collaborations or just a friendly hello</p>
-            <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-btn">
-                    <span>Email</span>
+            <p class="contact-tagline">"Every great film starts with a conversation"</p>
+            
+            <div class="contact-grid">
+                <a href="mailto:your.email@example.com" class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <h3>Email</h3>
+                    <p>your.email@example.com</p>
                 </a>
-                <a href="https://github.com/yourusername" class="contact-btn">
-                    <span>GitHub</span>
+                
+                <a href="https://instagram.com/yourusername" class="contact-card">
+                    <div class="contact-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>@yourusername</p>
                 </a>
-                <a href="https://linkedin.com/in/yourusername" class="contact-btn">
-                    <span>LinkedIn</span>
+                
+                <a href="https://vimeo.com/yourusername" class="contact-card">
+                    <div class="contact-icon">🎥</div>
+                    <h3>Vimeo</h3>
+                    <p>vimeo.com/yourname</p>
                 </a>
             </div>
         </div>
@@ -157,12 +247,13 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-grid"></div>
-        <p>&copy; 2024 Your Name. <span class="neon-small">Crafted in the digital void</span></p>
+        <div class="film-end">
+            <div class="end-marker">• THE END •</div>
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p class="footer-credit">Shot on location in [Your City]</p>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
